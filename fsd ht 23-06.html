@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>College Event Registration</title>
+
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body
+        {
+            background-color: #eef3f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container
+        {
+            width: 430px;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            text-align: center;
+        }
+        h1
+        {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        h3
+        {
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+        p
+        {
+            color: #555;
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        button
+        {
+            padding: 10px 22px;
+            margin: 8px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .register
+        {
+            background-color: #4f46e5;
+            color: white;
+        }
+        .register:hover
+        {
+            background-color: #4338ca;
+        }
+        .schedule
+        {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+        }
+        .schedule:hover
+        {
+            background-color: #dfe6e9;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>College Tech Fest 2026</h1>
+
+        <h3>Web Development Workshop</h3>
+
+        <p id="schedule">
+            Join us to explore modern web development techniques and build exciting projects.
+        </p>
+
+        <button class="register" onclick="registerEvent()">
+            Register Now
+        </button>
+
+        <button class="schedule" onclick="viewSchedule()">
+            View Schedule
+        </button>
+    </div>
+
+    <script>
+        function registerEvent() {
+            alert("Thank you for registering! We look forward to seeing you at the event.");
+        }
+
+        function viewSchedule() {
+            document.getElementById("schedule").textContent = "Event Schedule: 10:00 AM - Inaugration | 11:00 AM - HTML and CSS | 1:00 PM - JavaScript | 3:00 PM - Project Showcase | 5:00 PM - Closing Ceremony";
+        }
+    </script>
+</body>
+</html>
